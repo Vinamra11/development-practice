@@ -1,0 +1,6 @@
+services:
+  calculator:
+    build: .
+    volumes:
+      - ./src:/app/src
+    command: ["python", "-m", "src.main"]
